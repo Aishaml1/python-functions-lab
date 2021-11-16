@@ -24,3 +24,17 @@ def largest(li):
     return max
 print(largest([1, 2, 3, 4, 0])) # returns 4
 print (largest([10, 4, 2, 231, 91, 54]))  # returns 231
+
+#Write a function named occurances that takes two string arguments as input 
+#and counts the number of occurances of the second string inside the first string.
+
+# The count() method returns the number of occurrences 
+# of a substring in the given string.
+
+def occurances(str1, sub):
+    return str1.count(sub)
+
+print(occurances('fleep floop', 'e'))   # returns 2
+print(occurances('fleep floop', 'p')) # returns 2
+print(occurances('fleep floop', 'ee')) # returns 1
+print(occurances('fleep floop', 'fe'))  # returns 0
