@@ -43,10 +43,11 @@ print(occurances('fleep floop', 'fe'))  # returns 0
 # of numbers, multiplies them all together, and returns the product. 
 # HINT: Review your notes on args.
 def product(*args):
-    m = 1
-    for item in args:
-        m *= item
-    return m
+    result = 1
+    for b in args:
+        result *= b
+    return result
+
 print(product(-1, 4)) # returns -4
 print(product(2, 5, 5)) # returns 50
 print(product(4, 0.5, 5)) # returns 10.0
