@@ -38,3 +38,15 @@ print(occurances('fleep floop', 'e'))   # returns 2
 print(occurances('fleep floop', 'p')) # returns 2
 print(occurances('fleep floop', 'ee')) # returns 1
 print(occurances('fleep floop', 'fe'))  # returns 0
+
+# Write a function named product that takes an arbitrary number 
+# of numbers, multiplies them all together, and returns the product. 
+# HINT: Review your notes on args.
+def product(*args):
+    m = 1
+    for item in args:
+        m *= item
+    return m
+print(product(-1, 4)) # returns -4
+print(product(2, 5, 5)) # returns 50
+print(product(4, 0.5, 5)) # returns 10.0
